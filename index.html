@@ -125,20 +125,9 @@ $( document ).ready(function() {
 
     for(var i = 0; i < promos.length; i++)
     {
-        var obj = promos[i];
+       var obj = promos[i];
 
-       var initial = obj.initialDate;
-       var final = obj.finalDate;
-
-       var textDate = initial.split("T")[0] +" to "+ final.split("T")[0];
-
-       if(initial.split("T")[0] == final.split("T")[0])
-       {
-        textDate = initial.split("T")[0];
-        }
-
-       console.log(initial);
-       console.log(final);
+       var textDate = obj.period;
 
        $('#'+obj.type+' > tbody:last-child').append('<tr id='+obj.type+i+'><td>'+textDate+'</td></tr>');
     }
