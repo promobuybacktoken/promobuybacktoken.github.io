@@ -132,7 +132,7 @@ function search(ele) {
                     console.log("final test: " + resultStr);
                     textRulesByPromo["q" + idName] = resultStr;
 
-                    $("#"+idName).append('<td><img src="'+imageSource+'" height=25 width=25></img></td><td>'+textEligible+'</td><td><img id="q'+idName+'" src="question.png" height=20 width=20></img></td>');
+                    $("#"+idName).append('<td style="padding-left:20px"><img src="'+imageSource+'" height=25 width=25></img></td><td>'+textEligible+'</td><td><img id="q'+idName+'" src="question.png" height=20 width=20></img></td>');
 
                     $("#q"+idName).click( function() {
                         var id = $(this).attr('id');
